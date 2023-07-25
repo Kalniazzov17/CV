@@ -1,0 +1,213 @@
+@import "./reset.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 1230px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+/*header*/
+.header {
+  padding-top: 46px;
+  background-color: #f1f1f1;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 76px;
+}
+.logo {
+  position: relative;
+  padding: 0px 12px 3px 0px;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #000;
+}
+.logo::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #fda300;
+  border-radius: 50%;
+}
+
+/*NAV*/
+
+.nav-list {
+  display: flex;
+  column-gap: 50px;
+  font-weight: 800px;
+  font-size: 14px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.nav-button {
+  display: none;
+}
+
+.nav-link {
+  color: #000;
+}
+.nav-link.active {
+  color: #606060;
+}
+
+/*Header Content*/
+
+.header-content {
+  margin-top: 140px;
+  width: 500px;
+}
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+.header-title {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 66px;
+}
+.header-content p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/*Service*/
+
+.services {
+  padding: 90px 0;
+}
+.services-row {
+  display: flex;
+  column-gap: 30px;
+  flex-wrap: wrap;
+  row-gap: 60px;
+}
+.services-card {
+  flex: 1 1 0;
+  min-width: 315px;
+}
+
+.services-img {
+  width: 68px;
+  height: 68px;
+
+  margin-bottom: 30px;
+}
+.services-title {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+.services-card p {
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 28px;
+}
+
+/*Portfolio*/
+
+.portfolio {
+  padding: 90px 0;
+  background-color: #f1f1f1;
+}
+
+.title-1 {
+  font-size: 34px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.progect + .progect {
+  margin-top: 90px;
+}
+.progect {
+  text-align: center;
+}
+.progect-img {
+  margin-bottom: 40px;
+}
+.progect-title {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  transition: color 0.07s ease-in;
+}
+.progect-title a {
+  color: #000;
+  text-decoration: underline;
+}
+.progect-title :hover {
+  color: #545454;
+}
+.progect-title:active {
+  color: #000;
+}
+
+/*Footer*/
+
+.contacts {
+  text-align: center;
+  padding: 90px 0;
+}
+.contacts-title h2 {
+  margin-bottom: 40px;
+}
+.contacts-content {
+  font-size: 18px;
+  font-weight: 400;
+  color: #070707;
+  margin-bottom: 40px;
+}
+.contacts-button {
+  display: inline-block;
+  margin-bottom: 80px;
+}
+.btn {
+  font-size: 18px;
+  font-style: 400;
+  color: #fff;
+  background-color: #070707;
+  padding: 7px 22px;
+  border-radius: 30px;
+  transition: background-color 0.07s ease-in, position 0.3s ease-in;
+}
+.btn:hover,
+.btn:focus {
+  background-color: #3a3a3a;
+}
+.btn:active {
+  position: relative;
+  top: 1px;
+  background-color: #000;
+}
+
+.contacts-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 60px;
+  margin-bottom: 40px;
+}
+.contacts-footer {
+  font-size: 14px;
+  font-weight: 400;
+  color: #828282;
+}
